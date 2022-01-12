@@ -20,6 +20,14 @@ module.exports = {
         exclude: /node_modules/,
         use: "ts-loader",
       },
+
+      {
+        // sass loader will compile Sass (.scss files) to CSS
+        // then css loader will convert the CSS into modules that can be imported into JS files
+        // then style loader will create style nodes from those CSS modules and inject them into <style></style> of index.html
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
   plugins: [
