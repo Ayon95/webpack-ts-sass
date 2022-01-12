@@ -1,0 +1,6 @@
+# Support the last 2 versions of all browsers that have more than 0.5% of global users
+# Also support Internet Explorer 10
+
+last 2 versions
+> 0.5%
+IE 10

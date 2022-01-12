@@ -23,10 +23,11 @@ module.exports = {
 
       {
         // sass loader will compile Sass (.scss files) to CSS
+        // then postcss will add the necessary vendor prefixes and polyfills
         // then css loader will convert the CSS into modules that can be imported into JS files
         // then style loader will create style nodes from those CSS modules and inject them into <style></style> of index.html
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
     ],
   },
