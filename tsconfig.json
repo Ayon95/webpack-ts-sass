@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    // TS code will be compiled to ES5
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    // inline source maps will be generated
+    "sourceMap": true,
+    // implicit any will not be allowed
+    "noImplicitAny": true,
+    // Enable strict typechecking
+    "strict": true,
+    // Skip typechecking of .d.ts files (declaration files)
+    "skipLibCheck": true
+  },
+  //   only compile TS files in the src folder
+  "include": ["src/**/*"]
+}
